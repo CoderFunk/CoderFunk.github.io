@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Cat & ffee</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+        <!-- Loader con animación -->
+            <div class="Loader" id="Id-Loader">
+                <img id="tazaLoader" src="./assets/img/logo.png" alt="Logo"><b>Cafeteria Cat & ffee</b></img>
+                <button class="Entrar_web" onclick="Entrar();"><b>Entrar</b></button>
+            </div>
+        <!-- Fin Loader -->
+
+    <!-- inicio Main Grid BODY GENERAL CON SUS GRID AREAS -->
+        <div class="main-grid">
+
+            <!-- inicio header  MORADO -->
+                <header>
+                    <div class="info-header">
+                        <img id="logo" src="./assets/img/logo.png" width="100px" alt="logo">
+                        <p><b><h1> Cafeteria Cat & ffee</h1></b></p>
+                        <!-- info para escritorio  -->
+                            <div class="menu-desk">
+                            <p><a href="#Id-Loader">Inicio</a></p>
+                            <p><button id="botonMostrar" onclick="mostrarTecito();">☕<b>Lista de Té</b></button></p>
+                            <p><button id="botonMostrar" onclick="mostrarCafecito();">☕<b>Lista de café</b></button></p>
+                            <p><a href="#Id-Contacto">Contacto</a></p>
+                            </div>
+                        <!-- Fin info para escritorio  -->
+                        <!-- Footer  -->
+                            <footer>
+                                <div class="footer-desk">Visitanos y reserva tu mesa <a href="#"><b>"AQUI"</b></a><br>
+                                    <div class="rrss">
+                                        <a href="https://www.facebook.com" target="_blank"><img src="./assets/img/rrss_fb.png" alt="Facebook"></a>
+                                        <a href="http://www.instagram.com" target="_blank"><img src="./assets/img/rrss_insta.png" alt="Instagram"></a>
+                                        <a href="https://www.whatsapp.com" target="_blank"><img src="./assets/img/rrss_wsp.png" alt="Wsap"></a>
+                                    </div>
+                                </div>
+                            </footer>
+                        <!-- fin footer -->
+                        <!-- burger para movil  -->
+                            <div class="menu-movil">
+                                <img src="./assets/img/menu-nav.png" alt="menu">
+                            </div>
+                        <!-- fin burger movil  -->
+                    </div>
+                </header>
+            <!-- fin header -->
+
+            <!-- inicio lista de opciones NAV -->
+                <div class="nav">
+                    <h3>Ordenar por:</h3>
+                    <select class="lista">
+                        <option>💲 Precio</option>
+                        <option>🔤 Nombre</span></option>
+                        <option>⭐ Más vendido</option>
+                        <option>❤️ Combos parejas</option>
+                        <option>👀 Promociones</option>
+                    </select>
+                </div>
+            <!-- Fin lista de opciones NAV -->
+
+            <!-- Seccion Galeria -->
+                <!-- Codigo desde e-com tazas para solucionar error  -->
+            <section>
+                <div class="galeria">
+                    <div id="abrir-cafecito" class="cafecito">
+                        <div class="productoItem">
+                            <img src="assets/img/cafe_1.png" class="grid-img" alt="cafe_1" />
+                            <h2>Cafecito 1 MOCCA</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/cafe_2.png" class="grid-img" alt="cafe_2" />
+                            <h2>Cafecito 2 Crema</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/cafe_3.png" class="grid-img" alt="cafe_3" />
+                            <h2>Cafecito 3 c/leche</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/cafe_4.png" class="grid-img" alt="cafe_4" />
+                            <h2>Cafecito 4 Cortado</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/cafe_1.png" class="grid-img" alt="cafe_1" />
+                            <h2>Cafecito 1 Express</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                    </div>
+                    <div id="abrir-tecito" class="tecito">
+                        <div class="productoItem">
+                            <img src="assets/img/te_1.png" class="grid-img" alt="te_1" />
+                            <h2>Té 1 Orange Blue</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/te_2.png" class="grid-img" alt="te_2" />
+                            <h2>Té 2 Blue Label</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/te_3.png" class="grid-img" alt="te_3" />
+                            <h2>Té 3 Etiqueta Rojas</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/te_4.png" class="grid-img" alt="te_4" />
+                            <h2>Té 4 China Hoja</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                        <div class="productoItem">
+                            <img src="assets/img/te_1.png" class="grid-img" alt="te_1" />
+                            <h2>Té 1 Thai ♥</h2>
+                            <h4>$7.990</h4>
+                            <button class="bt-add"><b>Ver más</b></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <!-- Fin codigo de tazas  -->
+            <!-- Fin seccion Galeria  -->
+
+            <!-- Footer para movil  -->
+                <div class="footer-movil">
+                    <div class="rrss">
+                        <a href="www.facebook.com" target="_blank"><img src="./assets/img/rrss_fb.png" alt="Facebook"></a>
+                        <a href="http://www.instagram.com" target="_blank"><img src="./assets/img/rrss_insta.png" alt="Instagram"></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><img src="./assets/img/rrss_wsp.png" alt="Wsap"></a>
+                    </div>
+                </div>
+            <!-- Fin footer movil  -->
+        </div>
+    <!-- Fin Main Grid -->
+
+    <!-- Script para mas placer -->
+        <script>
+            function Entrar() {
+                document.getElementById('Id-Loader').style.display = 'none';
+            }
+            function mostrarCafecito() {
+                document.getElementById('abrir-cafecito').style.display = 'flex';
+                document.getElementById('abrir-tecito').style.display = 'none';
+            }
+            function mostrarTecito() {
+                document.getElementById('abrir-tecito').style.display = 'flex';
+                document.getElementById('abrir-cafecito').style.display = 'none';
+            }
+        </script>
+    <!--     Fin Script      -->
+</body>
+</html>
