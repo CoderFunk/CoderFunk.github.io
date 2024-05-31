@@ -1,0 +1,121 @@
+/* Fuentes */
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Navbar */
+.navbar-brand img{
+    height: 25pt;
+}
+#navbarNav {
+    justify-content: end;
+}
+.navbar-expand-lg {
+    text-align: center;
+}
+.navbar {
+    background-color: #28A745;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* Cuerpo */
+.classRow {
+    padding-bottom: 30px;
+}
+.cardStyle{
+    width: 250pt; 
+    margin: 5px;
+}
+.cardSpace {
+    padding: 20px;
+}
+.contenedor {
+    margin-top: 100px;
+}
+.card-title {
+    font-size: 20pt;
+}
+.card-text {
+    font-size: 16pt;
+    color:  #707070;
+    margin: 0;
+}
+.precioTachado {
+    font-size: 16pt;
+}
+.precioActual {
+    font-size: 20pt;
+    color: #28A745;
+    padding: 0 15px;
+}
+.card img {
+    width: auto;
+    height: 180pt;
+    object-fit: cover;
+}
+.lugar-evento {
+    font-size: 13pt;
+    color: #707070;
+}
+
+/* Formulario */
+.formulario {
+    flex-direction: column;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: #28A745;
+}
+.formulario h1 {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 21pt;
+}
+.formulario input {
+    height: 40pt;
+    width: 85vw;
+}
+#boton p {
+    font-size: 16pt;
+    width: 19pt;
+}
+#boton span {
+font-size: 16pt;
+width: 19pt;
+}
+#boton {
+    width: 112.71pt;
+    border-color: #70707000;
+    border-radius: 4pt;
+}
+#exampleFormControlInput1 {
+    font-size: 16pt;
+}
+#exampleFormControlInput2 {
+    font-size: 16pt;
+}
+
+/* Pie de pagina */
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+footer img{
+    padding: 25pt 0 10pt 0;
+    width: 82pt;
+}
+footer p{
+    color: #707070;
+    font-size: 16pt;
+}
+/* Fin CSS */
