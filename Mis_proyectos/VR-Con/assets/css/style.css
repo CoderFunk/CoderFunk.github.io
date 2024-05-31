@@ -1,0 +1,65 @@
+/* ____Estilos generales____ */
+body {
+	margin: 0px;
+	font-family: 'LucidaSans', 'LucidaSansRegular', 'LucidaGrande', 'LucidaSansUnicode', Geneva, Verdana, sans-serif;
+}
+/* ___Fin estilos generales___ */
+/* ____cabecera____ */
+.header {
+	background-image: url(../imgs/Entrenamiento_o_diversion.jpg);
+	height: 10em;
+	padding: 4em;
+	font-size: 2em;
+	background-size: cover;
+	background-position: center;
+	background-color: rgb(50, 50, 100);
+	background-blend-mode: hard-light;
+}
+
+.Titulo {
+	text-shadow: 5px 5px 0 black;
+	font-weight: lighter;
+	color: antiquewhite;
+}
+/* ____Fin cabecera____ */
+/* ____Contenido____  */
+.products {
+	width: 60%;
+	margin: auto;
+}
+
+.products td{
+	width:25%;
+	padding:2em;
+}
+
+.products img{
+	width: 300px;
+	border: solid 1px#74038a;
+}
+
+p {
+	padding: 15px;
+}
+/* ___Fin contenido___ */
+/* ____Footer____ */
+.footer {
+	width: 100%;
+	height: 40px;
+	margin-top: 50px;
+	padding-top: 100px;
+	background-color: rgb(64, 0, 52);
+	color: rgba(255, 255, 255, 0.922);
+    text-align: center;
+}
+
+#NestorMR_web {
+	color:aqua;
+}
+
+#DesafioLATAM {
+	color:chartreuse;
+}
+/* ____fin footer____ */
+
+/* fin css */
