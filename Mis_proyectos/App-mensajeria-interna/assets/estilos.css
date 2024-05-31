@@ -1,0 +1,104 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    position: fixed;
+    margin: 0px;
+    width: 100%;
+}
+.app {
+    display: flex;
+}
+.user {
+    width: 20vw;
+    height: 100vh;
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgb(182, 182, 182) solid;
+}
+.box-mi-cuenta {
+    background-color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+#status-user {
+    color: #343880;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: small;
+}
+#status-user span {
+    color: #00ce03;
+    font-size: 30px;
+}
+.nuevo-chat {
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+.nuevo-chat button {
+    width: 150px;
+    background-color: #B0A0D8;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.box-contactos {
+    background-color: rgb(248, 249, 255);
+    border: 1px rgb(182, 182, 182) solid;
+    display: flex;
+    align-items: center;
+}
+#avatar-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+h1 {
+    font-size: smaller;
+    padding-top: 20px;
+    margin: 0;
+}
+.contactos h1 {
+    font-size: medium;
+}
+.box-contactos {
+    width: auto;
+    height: 80px;
+}
+.box-contactos p {
+    margin: 0 0 20px;
+}
+.box-contactos img {
+    display: flex;
+    position: relative;
+    padding-inline: 20px;
+}
+h2 {
+    font-size: 50px;
+    margin: 50px 0 0 0;
+}
+.chat-bg {
+    background-color: #F8F8F8;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chat-bg p {
+    font-size: 25px;
+    margin: 0 20%;
+    padding: 0 2%;
+    text-align: center;
+}
+.chat-bg img {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+}
