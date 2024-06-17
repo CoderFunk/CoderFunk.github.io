@@ -7,7 +7,7 @@ function contarStickers()
 
     const resultado = document.getElementById('resultado');
     if (total <= 10) {
-        resultado.textContent = 'Llevas ${total} stickers';
+        resultado.textContent = `Llevas ${total} stickers`;
         resultado.style.color = 'white';
     } else {
         resultado.textContent = 'Superaste el limite de stickers (10 max)';
