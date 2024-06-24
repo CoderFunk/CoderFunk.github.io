@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar fondo con funcion</title>
+    <!-- css -->
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #ele1 {
+            display: flex;
+            height: 200px;
+            border-radius: 25px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #ele2 {
+            display: flex;
+            height: 200px;
+            border-radius: 25px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(255, 45, 108);
+            padding: 20px;
+        }
+        #boton {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p><b>Pintar con click</b></p>
+        <div id="ele1"> PARRAFO 1 <p><b>click para cambiar fondo a amarillo (sin fondo inicial).</b></p></div>
+        <div id="ele2"> PARRAFO 2 <p><b>click para cambiar de verde a amarillo (con fondo verde inicial).</b></p></div>
+    </div>
+
+    <!-- boton para refrescar  -->
+    <div id="boton">
+        <p><button onclick="refrescarPag();">Refrescar pagina</button></p>
+    <!-- boton sig desafio  -->
+    <p><a href="./4_colores.html"><button>Siguiente >> Desafio 3.1 <b>Pintar negro con click</b></button></a></p>
+    </div>
+</body>
+    <script src="./assets/js/script.js" ></script>
+</html>
