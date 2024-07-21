@@ -1,0 +1,19 @@
+.main-section {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/102/704/876/sand-rio-de-janeiro-brazil-ipanema-wallpaper-preview.jpg');
+    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    height: 100px;
+}
+
+.card img{
+    height: 250px;
+}
