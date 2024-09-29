@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+                <h5>Notebook Gamer Intel i5 <p>- "10th gen"</p></h5>
+                <p>Precio base: $<span class="precioBase"></span></p>
+                <p>Cantidad:
+                    <span class="cantidadTotal">0</span>
+                    <button id="mas1-btn" onclick="actualizarPrecio()">+</button>
+                    <button id="menos1-btn" onclick="actualizarPrecio()">-</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="total-section">
+        <p>Total a pagar: $<span class="precioTotal">0</span>.-</p>
+    </div>
+    <script src="../assets/index.js">
+    </script>
+</body>
+</html>
