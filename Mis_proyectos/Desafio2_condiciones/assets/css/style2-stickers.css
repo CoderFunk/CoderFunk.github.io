@@ -1,0 +1,61 @@
+/* css base  */
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/285/825/153/code-syntax-highlighting-computer-technology-programming-hd-wallpaper-preview.jpg);
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stickers */
+.container {
+    display: grid;
+    padding: 25px;
+    justify-items: center;
+    border-radius: 25px;
+    background-color: blueviolet;
+}
+
+h1 {
+    color: white;
+}
+.box {
+    display: flex;
+    gap: 10px;
+}
+.sticker {
+    display: grid;
+    justify-items: center;
+}
+.sticker img {
+    height: 150px;
+    border-radius: 25px;
+    padding: 15px;
+}
+.sticker input {
+    width: 50%;
+    display: flex;
+}
+
+.btn {
+    padding: 5px;
+}
+
+#resultado {
+    padding: 5px;
+}
+a {
+    color: aliceblue;
+    font-size: larger;
+}
