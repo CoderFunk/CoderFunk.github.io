@@ -1,0 +1,54 @@
+body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/690/228/914/code-javascript-hd-wallpaper-preview.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(16 0 57);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+select {
+    font-size: x-large;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultado {
+    font-size: x-large;
+    display: flex;
+    background-color: yellow;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Passwords  */
+.selectorPassword {
+    display: flex;
+    background-color: blanchedalmond;
+    justify-content: center;
+}
+
+li {
+    display: contents;
+}
+
+a {
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+}
