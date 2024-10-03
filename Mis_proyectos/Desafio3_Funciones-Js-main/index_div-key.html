@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Key Divs</title>
+    <style>
+        body {
+            font-size: larger;
+        }
+        #key {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .colored-div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .mainText {
+            display: flex;
+            justify-content: center;
+        }
+        .mainDivs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #cajas {
+            display: flex;
+        }
+        #siguiente {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <b><p>Presiona la tecla:</p></b>
+        <b><p> "A" para Rosado // "S" para Naranjo // "D" para Celeste</p></b>
+        <p><div id="key"></div></p>
+        <p><button onclick="reload();">Refrescar pagina</button></p>
+    </div>
+    <div class="mainText">
+        <div id="text">
+            <b><p>Para Crar un recuadro nuevo, presiona la tecla de cada color:</p></b>
+            <b><p> "Q" para Morado / / "W" para Gris / / "E" para Café</p></b>
+        </div>
+    </div>
+    <!-- boton sig desafio  -->
+    <p><a id="siguiente" href="./main.html"><button>Siguiente >> Menu principal.</button></a></p>
+    <div class="mainDivs"></div>
+    <!-- script -->
+    <script>
+        const colors = {
+            'a': 'pink',
+            's': 'orange',
+            'd': 'lightblue',
+            'q': 'purple',
+            'w': 'gray',
+            'e': 'brown'
+        };
+        const mainDivs = document.querySelector(".mainDivs");
+
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+            const color = colors[key];
+
+            if (color) {
+                if (key === 'a' || key === 's' || key === 'd') {
+                    document.getElementById('key').style.backgroundColor = color;
+                } else if (key === 'q' || key === 'w' || key === 'e') {
+                    const newDiv = document.createElement('div');
+                    newDiv.className = 'colored-div';
+                    newDiv.style.backgroundColor = color;
+                    mainDivs.appendChild(newDiv);
+                }
+            }
+        });
+        // script para refrescar web con boton
+        function reload(){location.reload();}
+    </script>
+</body>
+</html>

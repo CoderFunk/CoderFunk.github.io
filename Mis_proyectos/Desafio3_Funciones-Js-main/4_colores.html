@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Colores ♥</title>
+    <!-- css -->
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: larger;
+        }
+        .mainCuadros {
+            display: flex;
+            gap: 10px;
+        }
+        .boxs {
+            display: flex;
+            width: 200px;
+            height: 200px;
+        }
+        #colorRed{
+            background-color: red;
+        }
+        #colorBlue{
+            background-color: blue;
+        }
+        #colorGreen{
+            background-color: green;
+        }
+        #colorYellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Recuadros que cambian de color al hacer click  -->
+    <p>Haz click sobre los recuadros para cambiar a color negro.</p>
+    <div class="mainCuadros">
+        <div class="boxs" id="colorRed"></div>
+        <div class="boxs" id="colorBlue"></div>
+        <div class="boxs" id="colorGreen"></div>
+        <div class="boxs" id="colorYellow"></div>
+    </div>
+    <p><button onclick="reload();">Refrescar pagina</button></p>
+
+    <!-- boton sig desafio  -->
+    <p><a href="./index_div-key.html"><button>Siguiente >> Desafio 3.2 y 3.3 <b>Pintar con letras y creacion de div</b></button></a></p>
+</body>
+    <script src="./assets/js/4_colores.js"></script>
+</html>
