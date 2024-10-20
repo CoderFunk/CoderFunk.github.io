@@ -1,0 +1,19 @@
+.main-section {
+    background-image: url('https://www.adammonk.com/blog/wp-content/uploads/2011/02/Garota-De-Ipanema-web.jpg');
+    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    height: 100px;
+}
+
+.card img{
+    height: 250px;
+}
