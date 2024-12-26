@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/1457600/pexels-photo-1457600.jpeg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 100vh;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+}
+h3 {
+    color: rgb(1, 204, 255);
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.391);
+}
