@@ -1,10 +1,18 @@
 <div style="width:640px;height:480px;max-width:100%">
-        <div id="game"></div>
-      </div>
+    <div id="game"></div>
+</div>
+
 <script type="text/javascript">
     EJS_player = '#game';
-    EJS_biosUrl = '/isos_psx/bios_psx/SCPH1001.zip';
-    EJS_gameUrl = '/MSH.chd';
+    
+    // IMPORTANTE: Pon aquí la URL directa a tu archivo BIOS de PS1 (ej: scph5501.bin)
+    EJS_biosUrl = 'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/bios_psx/SCPH1001.bin'; 
+    
+    // Tu nueva URL directa sin bloqueos de Internet Archive
+    EJS_gameUrl = 'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/MSH.chd'; 
+    
     EJS_core = 'psx';
 </script>
-<script src="https://www.emulatorjs.com/loader.js"></script>
+
+<!-- Es altamente recomendable usar el cargador oficial de EmulatorJS para evitar conflictos en producción -->
+<script src="https://emulatorjs.org"></script>
