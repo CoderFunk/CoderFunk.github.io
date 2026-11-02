@@ -1,8 +1,9 @@
 // Configuración de los fragmentos del juego
 const urlsFragmentos = [
-    'juegos/juego.chd.001',
-    'juegos/juego.chd.002',
-    'juegos/juego.chd.003'
+    '/isos_psx/RE1/REDirectorCut.part1.rar',
+    '/isos_psx/RE1/REDirectorCut.part2.rar',
+    '/isos_psx/RE1/REDirectorCut.part3.rar',
+    '/isos_psx/RE1/REDirectorCut.part4.rar'
     ]; 
     
     async function descargarYUnirJuego() {
