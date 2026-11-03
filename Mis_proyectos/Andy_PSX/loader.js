@@ -31,21 +31,26 @@ async function descargarYUnirJuego() {
     
     if (statusElement) statusElement.innerText = "Iniciando emulador...";
 
-    // 5. Declarar las variables globales que EmulatorJS necesita
+        // 5. Declarar las variables globales que EmulatorJS necesita
     window.EJS_player = '#game';
     window.EJS_core = 'psx';
-    window.EJS_biosUrl = '';
+    window.EJS_biosUrl = 'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/bios_psx/SCPH1001.BIN'; // Restablece tu BIOS original aquí
     window.EJS_gameUrl = urlJuegoUnido; // El blob virtual en memoria
     
     // TRUCO OBLIGATORIO PARA PROTOCOLO BLOB:
-    // Fuerza al emulador a reconocer que el archivo final es un CHD sin importar la URL del blob.
     window.EJS_gameName = 'juego.chd'; 
 
-    // 6. Insertar el cargador oficial de EmulatorJS dinámicamente
+    // SOLUCIÓN AL MIXED CONTENT ERROR:
+    // Forzamos a EmulatorJS a usar repositorios HTTPS seguros para traer sus datos y el núcleo de PS1
+    window.EJS_pathtodata = 'https://emulatorjs.org';
+    window.EJS_startOnLoaded = true;
+
+    // 6. Insertar el cargador oficial de EmulatorJS dinámicamente usando la URL del CDN estructurado
     const scriptEmulator = document.createElement('script');
-    scriptEmulator.src = 'https://emulatorjs.com';
+    scriptEmulator.src = 'https://emulatorjs.orgloader.js';
     scriptEmulator.async = true;
     document.body.appendChild(scriptEmulator);
+
 
 
   } catch (error) {
