@@ -1,10 +1,15 @@
-<!-- Contenedor del juego -->
 <div style="width:640px;height:480px;max-width:100%">
-    <div id="game"></div>
-</div>
-
-<!-- Elemento visual opcional para ver el progreso en la pantalla -->
-<div id="loading-status" style="color: white; text-align: center; margin-top: 10px;">Cargando...</div>
-
-<!-- ENLAZAR TU LOADER PROPIO AL FINAL -->
-<script src="loader.js"></script>
+        <div id="game"></div>
+      </div>
+<script type="text/javascript">
+    EJS_player = '#game';
+    EJS_biosUrl = 'Mis_proyectos/Andy_PSX/isos_psx/bios_psx/SCPH1001.BIN'; // Url to Bios file
+    EJS_gameUrl = [
+        'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
+        'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
+        'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
+        'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar']; // Url to Game rom
+    
+    EJS_core = 'psx';
+</script>
+<script src="https://www.emulatorjs.com/loader.js"></script>
