@@ -1,10 +1,10 @@
 // Configuración de los fragmentos del juego    
 // 1. Lista de fragmentos cortados con WinRAR (sin compresión interna)
 const urlsFragmentos = [
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar'
+    'http://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
+    'http://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
+    'http://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
+    'http://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar'
     ]; 
 
 async function descargarYUnirJuego() {
@@ -34,7 +34,7 @@ async function descargarYUnirJuego() {
     // 5. Declarar las variables globales que EmulatorJS necesita
     window.EJS_player = '#game';
     window.EJS_core = 'psx';
-    window.EJS_biosUrl = 'https://github.io';
+    window.EJS_biosUrl = '';
     window.EJS_gameUrl = urlJuegoUnido; // El blob virtual en memoria
     
     // TRUCO OBLIGATORIO PARA PROTOCOLO BLOB:
