@@ -1,11 +1,12 @@
 // Configuración de los fragmentos del juego    
+const urlsFragmentos = [
 // 1. Lista de fragmentos cortados con WinRAR (sin compresión interna)
 const urlsFragmentos = [
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
-    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar'
-    ]; 
+  'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
+  'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
+  'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
+  'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar'
+  ]; 
 
 async function descargarYUnirJuego() {
   const statusElement = document.getElementById('loading-status');
@@ -31,29 +32,18 @@ async function descargarYUnirJuego() {
     
     if (statusElement) statusElement.innerText = "Iniciando emulador...";
 
-        // 5. Declarar las variables globales que EmulatorJS necesita
+    // 5. Declarar las variables globales que EmulatorJS necesita
     window.EJS_player = '#game';
     window.EJS_core = 'psx';
-    window.EJS_biosUrl = 'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/bios_psx/SCPH1001.BIN'; // Restablece tu BIOS original aquí
-    window.EJS_gameUrl = urlJuegoUnido; // El blob virtual en memoria
-    
-    // TRUCO OBLIGATORIO PARA PROTOCOLO BLOB:
-    window.EJS_gameName = 'juego.chd'; 
+    window.EJS_biosUrl = 'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/bios_psx/SCPH1001.BIN';
+    window.EJS_gameUrl = urlJuegoUnido; // <--- Pasamos el juego completo ya unido
 
-    // SOLUCIÓN AL MIXED CONTENT ERROR:
-    // Forzamos a EmulatorJS a usar repositorios HTTPS seguros para traer sus datos y el núcleo de PS1
-    window.EJS_pathtodata = 'https://emulatorjs.org';
-    window.EJS_startOnLoaded = true;
-
-    // 6. Insertar el cargador oficial de EmulatorJS dinámicamente
+    // 6. TRUCO CLAVE: Insertar el cargador oficial de EmulatorJS dinámicamente 
+    // solo cuando el archivo ya está unido y listo en la memoria
     const scriptEmulator = document.createElement('script');
-    // Asegúrate de que esta línea quede exactamente igual a la de abajo:
-    scriptEmulator.src = 'https://emulatorjs.org';
+    scriptEmulator.src = 'https://www.emulatorjs.com/loader.js';
     scriptEmulator.async = true;
     document.body.appendChild(scriptEmulator);
-
-
-
 
   } catch (error) {
     console.error("Error en el cargador:", error);
@@ -63,4 +53,3 @@ async function descargarYUnirJuego() {
 
 // Iniciar el proceso de inmediato al cargar la página
 window.addEventListener('DOMContentLoaded', descargarYUnirJuego);
-
