@@ -45,11 +45,13 @@ async function descargarYUnirJuego() {
     window.EJS_pathtodata = 'https://emulatorjs.org';
     window.EJS_startOnLoaded = true;
 
-    // 6. Insertar el cargador oficial de EmulatorJS dinámicamente usando la URL del CDN estructurado
+    // 6. Insertar el cargador oficial de EmulatorJS dinámicamente
     const scriptEmulator = document.createElement('script');
-    scriptEmulator.src = 'https://emulatorjs.orgloader.js';
+    // Asegúrate de que esta línea quede exactamente igual a la de abajo:
+    scriptEmulator.src = 'https://emulatorjs.org';
     scriptEmulator.async = true;
     document.body.appendChild(scriptEmulator);
+
 
 
 
