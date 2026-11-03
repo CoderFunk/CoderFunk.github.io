@@ -1,10 +1,10 @@
 // Configuración de los fragmentos del juego    
 // 1. Lista de fragmentos cortados con WinRAR (sin compresión interna)
 const urlsFragmentos = [
-    'Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
-    'Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
-    'Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
-    'Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar'
+    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part1.rar',
+    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part2.rar',
+    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part3.rar',
+    'https://coderfunk.github.io/Mis_proyectos/Andy_PSX/isos_psx/RE1/REDirectorCut.part4.rar'
     ]; 
 
 async function descargarYUnirJuego() {
